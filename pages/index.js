@@ -1,6 +1,7 @@
 import Head from "next/head";
+import styles from "../styles/Home.module.scss";
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -9,7 +10,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Yo</h1>
+      <h1 className={styles.red}>Welcome</h1>
     </div>
   );
 }
