@@ -3,10 +3,10 @@ import { combineReducers } from "redux";
 import thunk from "redux-thunk";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
-import cart from "./cartSlice";
+import cartReducer from "./cartSlice";
 
 const reducers = combineReducers({
-  cart,
+  cart: cartReducer,
 });
 
 const persistConfig = {
